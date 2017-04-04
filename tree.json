@@ -1,0 +1,57 @@
+[
+  {
+    "name": "d3.js API",
+    "parent": "null",
+    "children": [
+      {
+        "name": "Core",
+        "parent": "d3.js API",
+        "children": [
+          {
+            "name": "select",
+            "parent": "Core"
+          },
+          {
+            "name": "selectAll",
+            "parent": "Core"
+          }
+        ]
+      },
+      {
+        "name": "Scales",
+        "parent": "d3.js API"
+      },
+
+      {
+        "name": "SVG",
+        "parent": "d3.js API"
+      },
+
+      {
+        "name": "Time",
+        "parent": "d3.js API"
+      },
+
+      {
+        "name": "Layouts",
+        "parent": "d3.js API"
+      },
+
+      {
+        "name": "Geography",
+        "parent": "d3.js API"
+      },
+
+      {
+        "name": "Geometry",
+        "parent": "d3.js API"
+      },
+
+      {
+        "name": "Behaviors",
+        "parent": "d3.js API"
+      },
+
+    ]
+  }
+]
