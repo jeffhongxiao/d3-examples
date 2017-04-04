@@ -6,6 +6,7 @@ d3.json("./tree.json", function(error, json) {
   if (error) return console.warn(error);
   var treeData = json;
 
+
   // ************** Generate the tree diagram	 *****************
   var margin = {
       top: 20,
@@ -13,8 +14,8 @@ d3.json("./tree.json", function(error, json) {
       bottom: 20,
       left: 120
     },
-    width = 960 - margin.right - margin.left,
-    height = 500 - margin.top - margin.bottom;
+    width = 1600 - margin.right - margin.left,
+    height = 900 - margin.top - margin.bottom;
 
   var i = 0,
     duration = 750;
@@ -82,7 +83,11 @@ d3.json("./tree.json", function(error, json) {
         return d.children || d._children ? "end" : "start";
       })
       .text(function(d) {
-        if (!d.hide) return d.name;
+        if (!d.hide) {
+          return d.name;
+        } else {
+          debugger;
+        }
       })
       .style("fill-opacity", 1e-6);
 

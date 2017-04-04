@@ -1,139 +1,194 @@
-[
-  {
-    "name": "d3.js API",
-    "parent": "null",
-    "children": [
-      {
-        "name": "(d3 core)",
-        "parent": "d3.js API",
+[{
+  "name": "d3.js API",
+  "parent": "null",
+  "children": [{
+      "name": "(d3 core)",
+      "hide": true,
+      "parent": "d3.js API",
+      "children": [{
+        "name": "Selection",
         "children": [{
-            "name": "Selection",
-            "children": [
-              {
-                "name": "d3.select"
-              },
-              {
-                "name": "d3.selectAll"
-              },
-              {
-                "name": "selection.style"
-              },
-              {
-                "name": "selection.insert"
-              },
-              {
-                "name": "selection.filter, selection.sort, selection.order"
-              },
-              {
-                "name": "selection.each"
-              }
-            ]
+          "hide": "true",
+          "name": "d3.select"
+        }, {
+          "name": "d3.selectAll"
+        }, {
+          "name": "selection.style"
+        }, {
+          "name": "selection.insert"
+        }, {
+          "name": "selection.filter, selection.sort, selection.order"
+        }, {
+          "name": "selection.each"
+        }]
+      }, {
+        "name": "Transition",
+        "children": [{
+            "name": "d3.transition"
           }, {
-            "name": "Transition",
-            "children": [
-              {"name": "d3.transition"},
-              {"name": "transition.duration"},
-              {"name": "transition.style"},
-              {"name": "transition.filter"},
-
-              {"name": "d3.easy"}, {"name": "d3.timer"},
-
-              {"name": "d3.interpolate"},
-              {"name": "d3.interpolateNumber"},
-              {"name": "d3.interpolateRgb"},
-              {"name": "d3.interpolators"}
-            ]
+            "name": "transition.duration"
           }, {
-            "name": "Working w/ Arrays",
-            "children": [
-              {"name": "d3.min"}, {"name": "d3.sum"}, {"name": "d3.mean"},
-              {"name": "d3.bisect"}, {"name": "d3.ascending"},
-              {"name": "d3.zip"},
-              {"name": "d3.pairs"},
-              {"name": "d3.range"},
-              {"name": "d3.nest"}, {"name": "nest.key"},
-              {"name": "d3.map"}, {"name": "map.set"}, {"name": "map.keys"},
-              {"name": "d3.set"}, {"name": "set.has"}, {"name": "set.forEach"}
-            ]
+            "name": "transition.style"
           }, {
-            "name": "Math",
-            "children": [
-              {"name": "d3.random.normal"}, {"name": "d3.random.logNormal"}, {"name": "d3.transform"}
-            ]
+            "name": "transition.filter"
           },
+
           {
-            "name": "Loading External Resources",
-            "hide": true,
-            "children": [
-              {"name": "d3.xhr"},
-              {"name": "xhr.get"}, {"name": "xhr.post"},
-              {"name": "d3.text"}, {"name": "d3.json"},
-              {"name": "d3.csv"}, {"name": "d3.xml"}
-            ]
+            "name": "d3.easy"
           }, {
-            "name": "CSV Formatting",
-            "children": [
-              {"name": "d3.csv"}, {"name": "d3.csv.parse"}, {"name": "d3.cs.format"},
-              {"name": "d3.tsv"}, {"name": "d3.dsv"}
-            ]
+            "name": "d3.timer"
+          },
+
+          {
+            "name": "d3.interpolate"
           }, {
-            "name": "Localization",
-            "hide": true,
-            "children": [
-              {"name": "d3.locale"}, {"name": "locale.numberFormat"}, {"name": "locale.timeFormat"}
-            ]
+            "name": "d3.interpolateNumber"
           }, {
-            "name": "Colors",
-            "children": [
-              {"name": "d3.rgb"}, {"name": "rgb.hsl"}, {"name": "rgb.toString"}
-            ]
+            "name": "d3.interpolateRgb"
           }, {
-            "name": "Namespaces",
-            "hide": true,
-            "children": []
-          }, {
-            "name": "Internals",
-            "hide": true,
-            "children": []
-          }]
-
-      },
-
-      {
-        "name": "Scales",
+            "name": "d3.interpolators"
+          }
+        ]
+      }, {
+        "name": "Working w/ Arrays",
+        "children": [{
+          "name": "d3.min"
+        }, {
+          "name": "d3.sum"
+        }, {
+          "name": "d3.mean"
+        }, {
+          "name": "d3.bisect"
+        }, {
+          "name": "d3.ascending"
+        }, {
+          "name": "d3.zip"
+        }, {
+          "name": "d3.pairs"
+        }, {
+          "name": "d3.range"
+        }, {
+          "name": "d3.nest"
+        }, {
+          "name": "nest.key"
+        }, {
+          "name": "d3.map"
+        }, {
+          "name": "map.set"
+        }, {
+          "name": "map.keys"
+        }, {
+          "name": "d3.set"
+        }, {
+          "name": "set.has"
+        }, {
+          "name": "set.forEach"
+        }]
+      }, {
+        "name": "Math",
+        "children": [{
+          "name": "d3.random.normal"
+        }, {
+          "name": "d3.random.logNormal"
+        }, {
+          "name": "d3.transform"
+        }]
+      }, {
+        "name": "Loading External Resources",
+        "hide": true,
+        "children": [{
+          "name": "d3.xhr"
+        }, {
+          "name": "xhr.get"
+        }, {
+          "name": "xhr.post"
+        }, {
+          "name": "d3.text"
+        }, {
+          "name": "d3.json"
+        }, {
+          "name": "d3.csv"
+        }, {
+          "name": "d3.xml"
+        }]
+      }, {
+        "name": "CSV Formatting",
+        "children": [{
+          "name": "d3.csv"
+        }, {
+          "name": "d3.csv.parse"
+        }, {
+          "name": "d3.cs.format"
+        }, {
+          "name": "d3.tsv"
+        }, {
+          "name": "d3.dsv"
+        }]
+      }, {
+        "name": "Localization",
+        "hide": true,
+        "children": [{
+          "name": "d3.locale"
+        }, {
+          "name": "locale.numberFormat"
+        }, {
+          "name": "locale.timeFormat"
+        }]
+      }, {
+        "name": "Colors",
+        "children": [{
+          "name": "d3.rgb"
+        }, {
+          "name": "rgb.hsl"
+        }, {
+          "name": "rgb.toString"
+        }]
+      }, {
+        "name": "Namespaces",
+        "hide": true,
         "children": []
-      },
-
-      {
-        "name": "SVG",
+      }, {
+        "name": "Internals",
+        "hide": true,
         "children": []
-      },
+      }]
 
-      {
-        "name": "Time",
-        "children": []
-      },
+    },
 
-      {
-        "name": "Layouts",
-        "children": []
-      },
+    {
+      "name": "Scales",
+      "children": []
+    },
 
-      {
-        "name": "Geography",
-        "children": []
-      },
+    {
+      "name": "SVG",
+      "children": []
+    },
 
-      {
-        "name": "Geometry",
-        "children": []
-      },
+    {
+      "name": "Time",
+      "children": []
+    },
 
-      {
-        "name": "Behaviors",
-        "children": []
-      }
+    {
+      "name": "Layouts",
+      "children": []
+    },
 
-    ]
-  }
-]
+    {
+      "name": "Geography",
+      "children": []
+    },
+
+    {
+      "name": "Geometry",
+      "children": []
+    },
+
+    {
+      "name": "Behaviors",
+      "children": []
+    }
+
+  ]
+}]
