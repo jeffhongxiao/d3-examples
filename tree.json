@@ -39,7 +39,7 @@
               {"name": "transition.filter"},
 
               {"name": "d3.easy"}, {"name": "d3.timer"},
-              
+
               {"name": "d3.interpolate"},
               {"name": "d3.interpolateNumber"},
               {"name": "d3.interpolateRgb"},
@@ -72,7 +72,7 @@
               {"name": "d3.csv"}, {"name": "d3.xml"}
             ]
           }, {
-            "name": "CSV Formatting (d3.csv)",
+            "name": "CSV Formatting",
             "children": [
               {"name": "d3.csv"}, {"name": "d3.csv.parse"}, {"name": "d3.cs.format"},
               {"name": "d3.tsv"}, {"name": "d3.dsv"}
@@ -99,37 +99,37 @@
 
       {
         "name": "Scales",
-        "parent": "d3.js API"
+        "children": []
       },
 
       {
         "name": "SVG",
-        "parent": "d3.js API"
+        "children": []
       },
 
       {
         "name": "Time",
-        "parent": "d3.js API"
+        "children": []
       },
 
       {
         "name": "Layouts",
-        "parent": "d3.js API"
+        "children": []
       },
 
       {
         "name": "Geography",
-        "parent": "d3.js API"
+        "children": []
       },
 
       {
         "name": "Geometry",
-        "parent": "d3.js API"
+        "children": []
       },
 
       {
         "name": "Behaviors",
-        "parent": "d3.js API"
+        "children": []
       }
 
     ]
