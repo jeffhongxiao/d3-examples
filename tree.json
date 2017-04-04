@@ -5,6 +5,7 @@
     "children": [
       {
         "name": "(d3 core)",
+        "parent": "d3.js API",
         "children": [{
             "name": "Selection",
             "children": [
@@ -25,9 +26,6 @@
               },
               {
                 "name": "selection.each"
-              },
-              {
-                "name": "(TBA)"
               }
             ]
           }, {
@@ -65,6 +63,7 @@
           },
           {
             "name": "Loading External Resources",
+            "hide": true,
             "children": [
               {"name": "d3.xhr"},
               {"name": "xhr.get"}, {"name": "xhr.post"},
@@ -79,6 +78,7 @@
             ]
           }, {
             "name": "Localization",
+            "hide": true,
             "children": [
               {"name": "d3.locale"}, {"name": "locale.numberFormat"}, {"name": "locale.timeFormat"}
             ]
