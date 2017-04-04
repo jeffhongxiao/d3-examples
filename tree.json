@@ -4,19 +4,99 @@
     "parent": "null",
     "children": [
       {
-        "name": "Core",
-        "parent": "d3.js API",
-        "children": [
-          {
-            "name": "select",
-            "parent": "Core"
+        "name": "(d3 core)",
+        "children": [{
+            "name": "Selection",
+            "children": [
+              {
+                "name": "d3.select"
+              },
+              {
+                "name": "d3.selectAll"
+              },
+              {
+                "name": "selection.style"
+              },
+              {
+                "name": "selection.insert"
+              },
+              {
+                "name": "selection.filter, selection.sort, selection.order"
+              },
+              {
+                "name": "selection.each"
+              },
+              {
+                "name": "(TBA)"
+              }
+            ]
+          }, {
+            "name": "Transition",
+            "children": [
+              {"name": "d3.transition"},
+              {"name": "transition.duration"},
+              {"name": "transition.style"},
+              {"name": "transition.filter"},
+
+              {"name": "d3.easy"}, {"name": "d3.timer"},
+              
+              {"name": "d3.interpolate"},
+              {"name": "d3.interpolateNumber"},
+              {"name": "d3.interpolateRgb"},
+              {"name": "d3.interpolators"}
+            ]
+          }, {
+            "name": "Working w/ Arrays",
+            "children": [
+              {"name": "d3.min"}, {"name": "d3.sum"}, {"name": "d3.mean"},
+              {"name": "d3.bisect"}, {"name": "d3.ascending"},
+              {"name": "d3.zip"},
+              {"name": "d3.pairs"},
+              {"name": "d3.range"},
+              {"name": "d3.nest"}, {"name": "nest.key"},
+              {"name": "d3.map"}, {"name": "map.set"}, {"name": "map.keys"},
+              {"name": "d3.set"}, {"name": "set.has"}, {"name": "set.forEach"}
+            ]
+          }, {
+            "name": "Math",
+            "children": [
+              {"name": "d3.random.normal"}, {"name": "d3.random.logNormal"}, {"name": "d3.transform"}
+            ]
           },
           {
-            "name": "selectAll",
-            "parent": "Core"
-          }
-        ]
+            "name": "Loading External Resources",
+            "children": [
+              {"name": "d3.xhr"},
+              {"name": "xhr.get"}, {"name": "xhr.post"},
+              {"name": "d3.text"}, {"name": "d3.json"},
+              {"name": "d3.csv"}, {"name": "d3.xml"}
+            ]
+          }, {
+            "name": "CSV Formatting (d3.csv)",
+            "children": [
+              {"name": "d3.csv"}, {"name": "d3.csv.parse"}, {"name": "d3.cs.format"},
+              {"name": "d3.tsv"}, {"name": "d3.dsv"}
+            ]
+          }, {
+            "name": "Localization",
+            "children": [
+              {"name": "d3.locale"}, {"name": "locale.numberFormat"}, {"name": "locale.timeFormat"}
+            ]
+          }, {
+            "name": "Colors",
+            "children": [
+              {"name": "d3.rgb"}, {"name": "rgb.hsl"}, {"name": "rgb.toString"}
+            ]
+          }, {
+            "name": "Namespaces",
+            "children": []
+          }, {
+            "name": "Internals",
+            "children": []
+          }]
+
       },
+
       {
         "name": "Scales",
         "parent": "d3.js API"
@@ -50,7 +130,7 @@
       {
         "name": "Behaviors",
         "parent": "d3.js API"
-      },
+      }
 
     ]
   }
