@@ -2,7 +2,7 @@
   "name": "d3.js API",
   "parent": null,
   "children": [{
-      "name": "(d3 core)",
+      "name": "Core",
       "hide": false,
       "parent": "d3.js API",
       "children": [{
@@ -16,7 +16,11 @@
         }, {
           "name": "selection.insert"
         }, {
-          "name": "selection.filter, selection.sort, selection.order"
+          "name": "selection.filter"
+        }, {
+          "name": "selection.sort"
+        }, {
+          "name": "selection.order"
         }, {
           "name": "selection.each"
         }]
