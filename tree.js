@@ -1,6 +1,19 @@
 "use strict";
 
-//var treeData;
+function shouldShow(d) {
+  var isHide = d.hide || false;
+
+  if (isHide) {
+    return false;
+  }
+
+  if (d.parent === null) {
+    return true;
+  }
+
+  return shouldShow(d.parent);
+
+};
 
 d3.json("./tree.json", function(error, json) {
   if (error) return console.warn(error);
@@ -34,8 +47,9 @@ d3.json("./tree.json", function(error, json) {
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  //  var root = treeData[0];
-  var root = $(treeData[0]).attr('children')[0];
+  var root = treeData[0];
+  // FIXME change this to focus on a different topic
+  //var root = $(treeData[0]).attr('children')[0];
   root.x0 = height / 2;
   root.y0 = 0;
 
@@ -52,6 +66,11 @@ d3.json("./tree.json", function(error, json) {
     // Normalize for fixed-depth.
     nodes.forEach(function(d) {
       d.y = d.depth * 180;
+
+      var offset = (Math.random() - 0.5) * 10;
+      if (d.depth > 1) {
+        d.y = d.y + offset;
+      }
     });
 
     // Update the nodes…
@@ -83,10 +102,8 @@ d3.json("./tree.json", function(error, json) {
         return d.children || d._children ? "end" : "start";
       })
       .text(function(d) {
-        if (!d.hide) {
+        if (shouldShow(d)) {
           return d.name;
-        } else {
-          debugger;
         }
       })
       .style("fill-opacity", 1e-6);

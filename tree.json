@@ -1,14 +1,13 @@
 [{
   "name": "d3.js API",
-  "parent": "null",
+  "parent": null,
   "children": [{
       "name": "(d3 core)",
-      "hide": true,
+      "hide": false,
       "parent": "d3.js API",
       "children": [{
         "name": "Selection",
         "children": [{
-          "hide": "true",
           "name": "d3.select"
         }, {
           "name": "d3.selectAll"
