@@ -1,8 +1,11 @@
 "use strict";
 
 function shouldShow(d) {
-  var isHide = d.hide || false;
+  if (!d) {
+    return true;
+  }
 
+  var isHide = d.hide || false;
   if (isHide) {
     return false;
   }
@@ -47,9 +50,10 @@ d3.json("./tree.json", function(error, json) {
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  var root = treeData[0];
+  //var root = treeData[0];
   // FIXME change this to focus on a different topic
   //var root = $(treeData[0]).attr('children')[0];
+  var root = treeData[0].children[0];
   root.x0 = height / 2;
   root.y0 = 0;
 
