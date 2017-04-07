@@ -12,22 +12,6 @@ def json_pprint(json_obj):
         print json.dumps(json_obj,
         sort_keys=False, indent=2, separators=(',', ': '))
 
-def flatten_dict(mydict):
-        result = {}
-        for key, value in mydict.iteritems():
-                result["name"] = key
-                if isinstance(value, dict):
-                        mylist = []
-#                        for k, v in value.iteritems():
-#                            r["name"] = key;
-#                            r["children"] = flatten_list(value)
-                        mylist.append(flatten_dict(value))
-                        result["children"] = mylist
-                if isinstance(value, list):
-                        result["children"] = flatten_list(value)
-
-        return result
-
 def flatten_list(mylist):
         result = []
         for item in mylist:
