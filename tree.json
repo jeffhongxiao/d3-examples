@@ -1,197 +1,2146 @@
-[{
-  "name": "d3.js API",
-  "parent": null,
-  "children": [{
-      "name": "Core",
-      "hide": false,
-      "parent": "d3.js API",
-      "children": [{
-        "name": "Selection",
-        "children": [{
-          "name": "d3.select"
-        }, {
-          "name": "d3.selectAll"
-        }, {
-          "name": "selection.style"
-        }, {
-          "name": "selection.insert"
-        }, {
-          "name": "selection.filter"
-        }, {
-          "name": "selection.sort"
-        }, {
-          "name": "selection.order"
-        }, {
-          "name": "selection.each"
-        }]
-      }, {
-        "name": "Transition",
-        "children": [{
-            "name": "d3.transition"
-          }, {
-            "name": "transition.duration"
-          }, {
-            "name": "transition.style"
-          }, {
-            "name": "transition.filter"
-          },
-
+[
+  {
+    "name": "root",
+    "children": [
+      {
+        "name": "d3.scale",
+        "children": [
           {
-            "name": "d3.easy"
-          }, {
-            "name": "d3.timer"
+            "name": "Ordinal",
+            "children": [
+              {
+                "name": "d3.scale.ordinal"
+              },
+              {
+                "name": "ordinal"
+              },
+              {
+                "name": "ordinal.domain"
+              },
+              {
+                "name": "ordinal.range"
+              },
+              {
+                "name": "ordinal.rangePoints"
+              },
+              {
+                "name": "ordinal.rangeRoundPoints"
+              },
+              {
+                "name": "ordinal.rangeBands"
+              },
+              {
+                "name": "ordinal.rangeRoundBands"
+              },
+              {
+                "name": "ordinal.rangeBand"
+              },
+              {
+                "name": "ordinal.rangeExtent"
+              },
+              {
+                "name": "ordinal.copy"
+              },
+              {
+                "name": "d3.scale.category10"
+              },
+              {
+                "name": "d3.scale.category20"
+              },
+              {
+                "name": "d3.scale.category20b"
+              },
+              {
+                "name": "d3.scale.category20c"
+              }
+            ]
           },
-
           {
-            "name": "d3.interpolate"
-          }, {
-            "name": "d3.interpolateNumber"
-          }, {
-            "name": "d3.interpolateRgb"
-          }, {
-            "name": "d3.interpolators"
+            "name": "Quantitative",
+            "children": [
+              {
+                "name": "d3.scale.linear"
+              },
+              {
+                "name": "linear"
+              },
+              {
+                "name": "linear.invert"
+              },
+              {
+                "name": "linear.domain"
+              },
+              {
+                "name": "linear.range"
+              },
+              {
+                "name": "linear.rangeRound"
+              },
+              {
+                "name": "linear.interpolate"
+              },
+              {
+                "name": "linear.clamp"
+              },
+              {
+                "name": "linear.nice"
+              },
+              {
+                "name": "linear.ticks"
+              },
+              {
+                "name": "linear.tickFormat"
+              },
+              {
+                "name": "linear.copy"
+              },
+              {
+                "name": "d3.scale.sqrt"
+              },
+              {
+                "name": "d3.scale.pow"
+              },
+              {
+                "name": "pow"
+              },
+              {
+                "name": "pow.invert"
+              },
+              {
+                "name": "pow.domain"
+              },
+              {
+                "name": "pow.range"
+              },
+              {
+                "name": "pow.rangeRound"
+              },
+              {
+                "name": "pow.interpolate"
+              },
+              {
+                "name": "pow.clamp"
+              },
+              {
+                "name": "pow.nice"
+              },
+              {
+                "name": "pow.ticks"
+              },
+              {
+                "name": "pow.tickFormat"
+              },
+              {
+                "name": "pow.exponent"
+              },
+              {
+                "name": "pow.copy"
+              },
+              {
+                "name": "d3.scale.log"
+              },
+              {
+                "name": "log"
+              },
+              {
+                "name": "log.invert"
+              },
+              {
+                "name": "log.domain"
+              },
+              {
+                "name": "log.range"
+              },
+              {
+                "name": "log.rangeRound"
+              },
+              {
+                "name": "log.base"
+              },
+              {
+                "name": "log.interpolate"
+              },
+              {
+                "name": "log.clamp"
+              },
+              {
+                "name": "log.nice"
+              },
+              {
+                "name": "log.ticks"
+              },
+              {
+                "name": "log.tickFormat"
+              },
+              {
+                "name": "log.copy"
+              },
+              {
+                "name": "d3.scale.quantize"
+              },
+              {
+                "name": "quantize"
+              },
+              {
+                "name": "quantize.invertExtent"
+              },
+              {
+                "name": "quantize.domain"
+              },
+              {
+                "name": "quantize.range"
+              },
+              {
+                "name": "quantize.copy"
+              },
+              {
+                "name": "d3.scale.threshold"
+              },
+              {
+                "name": "threshold"
+              },
+              {
+                "name": "threshold.invertExtent"
+              },
+              {
+                "name": "threshold.domain"
+              },
+              {
+                "name": "threshold.range"
+              },
+              {
+                "name": "threshold.copy"
+              },
+              {
+                "name": "d3.scale.quantile"
+              },
+              {
+                "name": "quantile"
+              },
+              {
+                "name": "quantile.invertExtent"
+              },
+              {
+                "name": "quantile.domain"
+              },
+              {
+                "name": "quantile.range"
+              },
+              {
+                "name": "quantile.quantiles"
+              },
+              {
+                "name": "quantile.copy"
+              },
+              {
+                "name": "d3.scale.identity"
+              },
+              {
+                "name": "identity"
+              },
+              {
+                "name": "identity.invert"
+              },
+              {
+                "name": "identity.domain"
+              },
+              {
+                "name": "identity.range"
+              },
+              {
+                "name": "identity.ticks"
+              },
+              {
+                "name": "identity.tickFormat"
+              },
+              {
+                "name": "identity.copy"
+              }
+            ]
           }
         ]
-      }, {
-        "name": "Working w/ Arrays",
-        "children": [{
-          "name": "d3.min"
-        }, {
-          "name": "d3.sum"
-        }, {
-          "name": "d3.mean"
-        }, {
-          "name": "d3.bisect"
-        }, {
-          "name": "d3.ascending"
-        }, {
-          "name": "d3.zip"
-        }, {
-          "name": "d3.pairs"
-        }, {
-          "name": "d3.range"
-        }, {
-          "name": "d3.nest"
-        }, {
-          "name": "nest.key"
-        }, {
-          "name": "d3.map"
-        }, {
-          "name": "map.set"
-        }, {
-          "name": "map.keys"
-        }, {
-          "name": "d3.set"
-        }, {
-          "name": "set.has"
-        }, {
-          "name": "set.forEach"
-        }]
-      }, {
-        "name": "Math",
-        "children": [{
-          "name": "d3.random.normal"
-        }, {
-          "name": "d3.random.logNormal"
-        }, {
-          "name": "d3.transform"
-        }]
-      }, {
-        "name": "Loading External Resources",
-        "hide": true,
-        "children": [{
-          "name": "d3.xhr"
-        }, {
-          "name": "xhr.get"
-        }, {
-          "name": "xhr.post"
-        }, {
-          "name": "d3.text"
-        }, {
-          "name": "d3.json"
-        }, {
-          "name": "d3.csv"
-        }, {
-          "name": "d3.xml"
-        }]
-      }, {
-        "name": "CSV Formatting",
-        "children": [{
-          "name": "d3.csv"
-        }, {
-          "name": "d3.csv.parse"
-        }, {
-          "name": "d3.cs.format"
-        }, {
-          "name": "d3.tsv"
-        }, {
-          "name": "d3.dsv"
-        }]
-      }, {
-        "name": "Localization",
-        "hide": true,
-        "children": [{
-          "name": "d3.locale"
-        }, {
-          "name": "locale.numberFormat"
-        }, {
-          "name": "locale.timeFormat"
-        }]
-      }, {
-        "name": "Colors",
-        "children": [{
-          "name": "d3.rgb"
-        }, {
-          "name": "rgb.hsl"
-        }, {
-          "name": "rgb.toString"
-        }]
-      }, {
-        "name": "Namespaces",
-        "hide": true,
-        "children": []
-      }, {
-        "name": "Internals",
-        "hide": true,
-        "children": []
-      }]
-
-    },
-
-    {
-      "name": "Scales",
-      "children": []
-    },
-
-    {
-      "name": "SVG",
-      "children": []
-    },
-
-    {
-      "name": "Time",
-      "children": []
-    },
-
-    {
-      "name": "Layouts",
-      "children": []
-    },
-
-    {
-      "name": "Geography",
-      "children": []
-    },
-
-    {
-      "name": "Geometry",
-      "children": []
-    },
-
-    {
-      "name": "Behaviors",
-      "children": []
-    }
-
-  ]
-}]
+      },
+      {
+        "name": "d3.layout",
+        "children": [
+          {
+            "name": "Treemap",
+            "children": [
+              {
+                "name": "d3.layout.treemap"
+              },
+              {
+                "name": "treemap"
+              },
+              {
+                "name": "treemap.nodes"
+              },
+              {
+                "name": "treemap.links"
+              },
+              {
+                "name": "treemap.children"
+              },
+              {
+                "name": "treemap.sort"
+              },
+              {
+                "name": "treemap.value"
+              },
+              {
+                "name": "treemap.size"
+              },
+              {
+                "name": "treemap.padding"
+              },
+              {
+                "name": "treemap.round"
+              },
+              {
+                "name": "treemap.sticky"
+              },
+              {
+                "name": "treemap.mode"
+              }
+            ]
+          },
+          {
+            "name": "Chord",
+            "children": [
+              {
+                "name": "d3.layout.chord"
+              },
+              {
+                "name": "chord.matrix"
+              },
+              {
+                "name": "chord.padding"
+              },
+              {
+                "name": "chord.sortGroups"
+              },
+              {
+                "name": "chord.sortSubgroups"
+              },
+              {
+                "name": "chord.sortChords"
+              },
+              {
+                "name": "chord.chords"
+              },
+              {
+                "name": "chord.groups"
+              }
+            ]
+          },
+          {
+            "name": "Force",
+            "children": [
+              {
+                "name": "d3.layout.force"
+              },
+              {
+                "name": "force.on"
+              },
+              {
+                "name": "force.nodes"
+              },
+              {
+                "name": "force.links"
+              },
+              {
+                "name": "force.size"
+              },
+              {
+                "name": "force.linkDistance"
+              },
+              {
+                "name": "force.linkStrength"
+              },
+              {
+                "name": "force.friction"
+              },
+              {
+                "name": "force.charge"
+              },
+              {
+                "name": "force.chargeDistance"
+              },
+              {
+                "name": "force.gravity"
+              },
+              {
+                "name": "force.theta"
+              },
+              {
+                "name": "force.start"
+              },
+              {
+                "name": "force.resume"
+              },
+              {
+                "name": "force.stop"
+              },
+              {
+                "name": "force.alpha"
+              },
+              {
+                "name": "force.tick"
+              },
+              {
+                "name": "force.drag"
+              }
+            ]
+          },
+          {
+            "name": "Hierarchy",
+            "children": [
+              {
+                "name": "d3.layout.hierarchy"
+              },
+              {
+                "name": "hierarchy"
+              },
+              {
+                "name": "hierarchy.nodes"
+              },
+              {
+                "name": "hierarchy.links"
+              },
+              {
+                "name": "hierarchy.children"
+              },
+              {
+                "name": "hierarchy.sort"
+              },
+              {
+                "name": "hierarchy.value"
+              },
+              {
+                "name": "hierarchy.revalue"
+              }
+            ]
+          },
+          {
+            "name": "Partition",
+            "children": [
+              {
+                "name": "d3.layout.partition"
+              },
+              {
+                "name": "partition"
+              },
+              {
+                "name": "partition.nodes"
+              },
+              {
+                "name": "partition.links"
+              },
+              {
+                "name": "partition.children"
+              },
+              {
+                "name": "partition.sort"
+              },
+              {
+                "name": "partition.value"
+              },
+              {
+                "name": "partition.size"
+              }
+            ]
+          },
+          {
+            "name": "Tree",
+            "children": [
+              {
+                "name": "d3.layout.tree"
+              },
+              {
+                "name": "tree"
+              },
+              {
+                "name": "tree.nodes"
+              },
+              {
+                "name": "tree.links"
+              },
+              {
+                "name": "tree.children"
+              },
+              {
+                "name": "tree.sort"
+              },
+              {
+                "name": "tree.separation"
+              },
+              {
+                "name": "tree.size"
+              },
+              {
+                "name": "tree.nodeSize"
+              }
+            ]
+          },
+          {
+            "name": "Pie",
+            "children": [
+              {
+                "name": "d3.layout.pie"
+              },
+              {
+                "name": "pie"
+              },
+              {
+                "name": "pie.value"
+              },
+              {
+                "name": "pie.sort"
+              },
+              {
+                "name": "pie.startAngle"
+              },
+              {
+                "name": "pie.endAngle"
+              },
+              {
+                "name": "pie.padAngle"
+              }
+            ]
+          },
+          {
+            "name": "Bundle",
+            "children": [
+              {
+                "name": "d3.layout.bundle"
+              },
+              {
+                "name": "bundle"
+              }
+            ]
+          },
+          {
+            "name": "Histogram",
+            "children": [
+              {
+                "name": "d3.layout.histogram"
+              },
+              {
+                "name": "histogram"
+              },
+              {
+                "name": "histogram.value"
+              },
+              {
+                "name": "histogram.range"
+              },
+              {
+                "name": "histogram.bins"
+              },
+              {
+                "name": "histogram.frequency"
+              }
+            ]
+          },
+          {
+            "name": "Cluster",
+            "children": [
+              {
+                "name": "d3.layout.cluster"
+              },
+              {
+                "name": "cluster"
+              },
+              {
+                "name": "cluster.nodes"
+              },
+              {
+                "name": "cluster.links"
+              },
+              {
+                "name": "cluster.children"
+              },
+              {
+                "name": "cluster.sort"
+              },
+              {
+                "name": "cluster.separation"
+              },
+              {
+                "name": "cluster.size"
+              },
+              {
+                "name": "cluster.nodeSize"
+              }
+            ]
+          },
+          {
+            "name": "Stack",
+            "children": [
+              {
+                "name": "d3.layout.stack"
+              },
+              {
+                "name": "stack"
+              },
+              {
+                "name": "stack.values"
+              },
+              {
+                "name": "stack.order"
+              },
+              {
+                "name": "stack.offset"
+              },
+              {
+                "name": "stack.x"
+              },
+              {
+                "name": "stack.y"
+              },
+              {
+                "name": "stack.out"
+              }
+            ]
+          },
+          {
+            "name": "Pack",
+            "children": [
+              {
+                "name": "d3.layout.pack"
+              },
+              {
+                "name": "pack"
+              },
+              {
+                "name": "pack.nodes"
+              },
+              {
+                "name": "pack.links"
+              },
+              {
+                "name": "pack.children"
+              },
+              {
+                "name": "pack.sort"
+              },
+              {
+                "name": "pack.value"
+              },
+              {
+                "name": "pack.size"
+              },
+              {
+                "name": "pack.radius"
+              },
+              {
+                "name": "pack.padding pixels"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "d3.behavior",
+        "children": [
+          {
+            "name": "Drag",
+            "children": [
+              {
+                "name": "d3.behavior.drag"
+              },
+              {
+                "name": "drag.origin"
+              },
+              {
+                "name": "drag.on"
+              }
+            ]
+          },
+          {
+            "name": "Zoom",
+            "children": [
+              {
+                "name": "d3.behavior.zoom"
+              },
+              {
+                "name": "zoom"
+              },
+              {
+                "name": "zoom.scale"
+              },
+              {
+                "name": "zoom.translate"
+              },
+              {
+                "name": "zoom.scaleExtent"
+              },
+              {
+                "name": "zoom.center"
+              },
+              {
+                "name": "zoom.size"
+              },
+              {
+                "name": "zoom.duration"
+              },
+              {
+                "name": "zoom.x"
+              },
+              {
+                "name": "zoom.y"
+              },
+              {
+                "name": "zoom.on"
+              },
+              {
+                "name": "zoom.event"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "d3.geo",
+        "children": [
+          {
+            "name": "Paths",
+            "children": [
+              {
+                "name": "d3.geo.path"
+              },
+              {
+                "name": "path"
+              },
+              {
+                "name": "path.projection"
+              },
+              {
+                "name": "path.context"
+              },
+              {
+                "name": "path.pointRadius"
+              },
+              {
+                "name": "path.area"
+              },
+              {
+                "name": "path.centroid"
+              },
+              {
+                "name": "path.bounds"
+              },
+              {
+                "name": "d3.geo.graticule"
+              },
+              {
+                "name": "graticule"
+              },
+              {
+                "name": "graticule.lines"
+              },
+              {
+                "name": "graticule.outline"
+              },
+              {
+                "name": "graticule.extent"
+              },
+              {
+                "name": "graticule.majorExtent"
+              },
+              {
+                "name": "graticule.minorExtent"
+              },
+              {
+                "name": "graticule.step"
+              },
+              {
+                "name": "graticule.majorStep"
+              },
+              {
+                "name": "graticule.minorStep"
+              },
+              {
+                "name": "graticule.precision"
+              },
+              {
+                "name": "d3.geo.circle"
+              },
+              {
+                "name": "circle"
+              },
+              {
+                "name": "circle.origin"
+              },
+              {
+                "name": "circle.angle"
+              },
+              {
+                "name": "circle.precision"
+              },
+              {
+                "name": "d3.geo.area"
+              },
+              {
+                "name": "d3.geo.bounds"
+              },
+              {
+                "name": "d3.geo.centroid"
+              },
+              {
+                "name": "d3.geo.distance"
+              },
+              {
+                "name": "d3.geo.interpolate"
+              },
+              {
+                "name": "d3.geo.length"
+              },
+              {
+                "name": "d3.geo.rotation"
+              },
+              {
+                "name": "rotation"
+              },
+              {
+                "name": "rotation.invert"
+              }
+            ]
+          },
+          {
+            "name": "Streams",
+            "children": [
+              {
+                "name": "d3.geo.stream"
+              },
+              {
+                "name": "stream.point coordinate"
+              },
+              {
+                "name": "stream.lineStart"
+              },
+              {
+                "name": "stream.lineEnd"
+              },
+              {
+                "name": "stream.polygonStart"
+              },
+              {
+                "name": "stream.polygonEnd"
+              },
+              {
+                "name": "stream.sphere"
+              },
+              {
+                "name": "d3.geo.transform"
+              },
+              {
+                "name": "transform.stream"
+              },
+              {
+                "name": "d3.geo.clipExtent"
+              },
+              {
+                "name": "clipExtent.extent"
+              }
+            ]
+          },
+          {
+            "name": "Projections",
+            "children": [
+              {
+                "name": "d3.geo.projection"
+              },
+              {
+                "name": "projection"
+              },
+              {
+                "name": "projection.invert"
+              },
+              {
+                "name": "projection.rotate"
+              },
+              {
+                "name": "projection.center"
+              },
+              {
+                "name": "projection.translate"
+              },
+              {
+                "name": "projection.scale"
+              },
+              {
+                "name": "projection.clipAngle"
+              },
+              {
+                "name": "projection.clipExtent"
+              },
+              {
+                "name": "projection.precision"
+              },
+              {
+                "name": "projection.stream"
+              },
+              {
+                "name": "d3.geo.projectionMutator"
+              },
+              {
+                "name": "d3.geo.albers"
+              },
+              {
+                "name": "albers.parallels"
+              },
+              {
+                "name": "d3.geo.albersUsa"
+              },
+              {
+                "name": "d3.geo.azimuthalEqualArea"
+              },
+              {
+                "name": "d3.geo.azimuthalEquidistant"
+              },
+              {
+                "name": "d3.geo.conicConformal"
+              },
+              {
+                "name": "d3.geo.conicEquidistant"
+              },
+              {
+                "name": "d3.geo.conicEqualArea projection"
+              },
+              {
+                "name": "d3.geo.equirectangular projection"
+              },
+              {
+                "name": "d3.geo.gnomonic"
+              },
+              {
+                "name": "d3.geo.mercator"
+              },
+              {
+                "name": "d3.geo.orthographic"
+              },
+              {
+                "name": "d3.geo.stereographic"
+              },
+              {
+                "name": "d3.geo.azimuthalEqualArea.raw"
+              },
+              {
+                "name": "d3.geo.azimuthalEquidistant.raw"
+              },
+              {
+                "name": "d3.geo.conicConformal.raw"
+              },
+              {
+                "name": "d3.geo.conicEquidistant.raw"
+              },
+              {
+                "name": "d3.geo.conicEqualArea.raw projection"
+              },
+              {
+                "name": "d3.geo.equirectangular.raw projection"
+              },
+              {
+                "name": "d3.geo.gnomonic.raw"
+              },
+              {
+                "name": "d3.geo.mercator.raw"
+              },
+              {
+                "name": "d3.geo.orthographic.raw"
+              },
+              {
+                "name": "d3.geo.stereographic.raw"
+              },
+              {
+                "name": "d3.geo.transverseMercator.raw"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "d3.time",
+        "children": [
+          {
+            "name": "Time Intervals",
+            "children": [
+              {
+                "name": "d3.time.interval"
+              },
+              {
+                "name": "interval"
+              },
+              {
+                "name": "interval.range"
+              },
+              {
+                "name": "interval.floor"
+              },
+              {
+                "name": "interval.round"
+              },
+              {
+                "name": "interval.ceil"
+              },
+              {
+                "name": "interval.offset"
+              },
+              {
+                "name": "interval.utc"
+              },
+              {
+                "name": "d3.time.day"
+              },
+              {
+                "name": "d3.time.days"
+              },
+              {
+                "name": "d3.time.dayOfYear"
+              },
+              {
+                "name": "d3.time.hour"
+              },
+              {
+                "name": "d3.time.hours"
+              },
+              {
+                "name": "d3.time.minute"
+              },
+              {
+                "name": "d3.time.minutes"
+              },
+              {
+                "name": "d3.time.month"
+              },
+              {
+                "name": "d3.time.months"
+              },
+              {
+                "name": "d3.time.second"
+              },
+              {
+                "name": "d3.time.seconds"
+              },
+              {
+                "name": "d3.time.sunday"
+              },
+              {
+                "name": "d3.time.sundays"
+              },
+              {
+                "name": "d3.time.sundayOfYear"
+              },
+              {
+                "name": "d3.time.monday"
+              },
+              {
+                "name": "d3.time.mondays"
+              },
+              {
+                "name": "d3.time.mondayOfYear"
+              },
+              {
+                "name": "d3.time.tuesday"
+              },
+              {
+                "name": "d3.time.tuesdays"
+              },
+              {
+                "name": "d3.time.tuesdayOfYear"
+              },
+              {
+                "name": "d3.time.wednesday"
+              },
+              {
+                "name": "d3.time.wednesdays"
+              },
+              {
+                "name": "d3.time.wednesdayOfYear"
+              },
+              {
+                "name": "d3.time.thursday"
+              },
+              {
+                "name": "d3.time.thursdays"
+              },
+              {
+                "name": "d3.time.thursdayOfYear"
+              },
+              {
+                "name": "d3.time.friday"
+              },
+              {
+                "name": "d3.time.fridays"
+              },
+              {
+                "name": "d3.time.fridayOfYear"
+              },
+              {
+                "name": "d3.time.saturday"
+              },
+              {
+                "name": "d3.time.saturdays"
+              },
+              {
+                "name": "d3.time.saturdayOfYear"
+              },
+              {
+                "name": "d3.time.week"
+              },
+              {
+                "name": "d3.time.weeks"
+              },
+              {
+                "name": "d3.time.weekOfYear"
+              },
+              {
+                "name": "d3.time.year"
+              },
+              {
+                "name": "d3.time.years"
+              }
+            ]
+          },
+          {
+            "name": "Time Scales",
+            "children": [
+              {
+                "name": "d3.time.scale"
+              },
+              {
+                "name": "scale"
+              },
+              {
+                "name": "scale.invert"
+              },
+              {
+                "name": "scale.domain"
+              },
+              {
+                "name": "scale.nice"
+              },
+              {
+                "name": "scale.range"
+              },
+              {
+                "name": "scale.rangeRound"
+              },
+              {
+                "name": "scale.interpolate"
+              },
+              {
+                "name": "scale.clamp"
+              },
+              {
+                "name": "scale.ticks"
+              },
+              {
+                "name": "scale.tickFormat"
+              },
+              {
+                "name": "scale.copy"
+              }
+            ]
+          },
+          {
+            "name": "Time Formatting",
+            "children": [
+              {
+                "name": "d3.time.format"
+              },
+              {
+                "name": "format"
+              },
+              {
+                "name": "format.parse"
+              },
+              {
+                "name": "d3.time.format.multi"
+              },
+              {
+                "name": "d3.time.format.utc"
+              },
+              {
+                "name": "d3.time.format.iso"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "d3.svg",
+        "children": [
+          {
+            "name": "Shapes",
+            "children": [
+              {
+                "name": "d3.svg.line"
+              },
+              {
+                "name": "line"
+              },
+              {
+                "name": "line.x"
+              },
+              {
+                "name": "line.y"
+              },
+              {
+                "name": "line.interpolate"
+              },
+              {
+                "name": "line.tension"
+              },
+              {
+                "name": "line.defined"
+              },
+              {
+                "name": "d3.svg.line.radial"
+              },
+              {
+                "name": "line"
+              },
+              {
+                "name": "line.radius"
+              },
+              {
+                "name": "line.angle"
+              },
+              {
+                "name": "line.interpolate"
+              },
+              {
+                "name": "line.tension"
+              },
+              {
+                "name": "line.defined"
+              },
+              {
+                "name": "d3.svg.area"
+              },
+              {
+                "name": "area"
+              },
+              {
+                "name": "area.x"
+              },
+              {
+                "name": "area.x0 accessor"
+              },
+              {
+                "name": "area.x1 accessor"
+              },
+              {
+                "name": "area.y"
+              },
+              {
+                "name": "area.y0 accessor"
+              },
+              {
+                "name": "area.y1 accessor"
+              },
+              {
+                "name": "area.interpolate"
+              },
+              {
+                "name": "area.tension"
+              },
+              {
+                "name": "area.defined"
+              },
+              {
+                "name": "d3.svg.area.radial"
+              },
+              {
+                "name": "area"
+              },
+              {
+                "name": "area.radius"
+              },
+              {
+                "name": "area.innerRadius accessor"
+              },
+              {
+                "name": "area.outerRadius accessor"
+              },
+              {
+                "name": "area.angle"
+              },
+              {
+                "name": "area.startAngle accessor"
+              },
+              {
+                "name": "area.endAngle accessor"
+              },
+              {
+                "name": "area.defined"
+              },
+              {
+                "name": "d3.svg.arc"
+              },
+              {
+                "name": "arc"
+              },
+              {
+                "name": "arc.innerRadius"
+              },
+              {
+                "name": "arc.outerRadius"
+              },
+              {
+                "name": "arc.cornerRadius"
+              },
+              {
+                "name": "arc.padRadius"
+              },
+              {
+                "name": "arc.startAngle"
+              },
+              {
+                "name": "arc.endAngle"
+              },
+              {
+                "name": "arc.padAngle"
+              },
+              {
+                "name": "arc.centroid"
+              },
+              {
+                "name": "d3.svg.symbol"
+              },
+              {
+                "name": "symbol"
+              },
+              {
+                "name": "symbol.type"
+              },
+              {
+                "name": "symbol.size accessor"
+              },
+              {
+                "name": "d3.svg.symbolTypes"
+              },
+              {
+                "name": "d3.svg.chord"
+              },
+              {
+                "name": "chord"
+              },
+              {
+                "name": "chord.radius"
+              },
+              {
+                "name": "chord.startAngle"
+              },
+              {
+                "name": "chord.endAngle"
+              },
+              {
+                "name": "chord.source"
+              },
+              {
+                "name": "chord.target"
+              },
+              {
+                "name": "d3.svg.diagonal"
+              },
+              {
+                "name": "diagonal"
+              },
+              {
+                "name": "diagonal.source"
+              },
+              {
+                "name": "diagonal.target"
+              },
+              {
+                "name": "diagonal.projection"
+              },
+              {
+                "name": "d3.svg.diagonal.radial"
+              },
+              {
+                "name": "diagonal"
+              }
+            ]
+          },
+          {
+            "name": "Axes",
+            "children": [
+              {
+                "name": "d3.svg.axis"
+              },
+              {
+                "name": "axis"
+              },
+              {
+                "name": "axis.scale"
+              },
+              {
+                "name": "axis.orient"
+              },
+              {
+                "name": "axis.ticks"
+              },
+              {
+                "name": "axis.tickValues"
+              },
+              {
+                "name": "axis.tickSize"
+              },
+              {
+                "name": "axis.innerTickSize"
+              },
+              {
+                "name": "axis.outerTickSize"
+              },
+              {
+                "name": "axis.tickPadding"
+              },
+              {
+                "name": "axis.tickFormat"
+              }
+            ]
+          },
+          {
+            "name": "Controls",
+            "children": [
+              {
+                "name": "d3.svg.brush"
+              },
+              {
+                "name": "brush"
+              },
+              {
+                "name": "brush.x"
+              },
+              {
+                "name": "brush.y"
+              },
+              {
+                "name": "brush.extent"
+              },
+              {
+                "name": "brush.clear"
+              },
+              {
+                "name": "brush.empty"
+              },
+              {
+                "name": "brush.on"
+              },
+              {
+                "name": "brush.event"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "d3.geom",
+        "children": [
+          {
+            "name": "Voronoi",
+            "children": [
+              {
+                "name": "d3.geom.voronoi"
+              },
+              {
+                "name": "voronoi"
+              },
+              {
+                "name": "voronoi.x"
+              },
+              {
+                "name": "voronoi.y"
+              },
+              {
+                "name": "voronoi.clipExtent"
+              },
+              {
+                "name": "voronoi.links"
+              },
+              {
+                "name": "voronoi.triangles"
+              }
+            ]
+          },
+          {
+            "name": "Hull",
+            "children": [
+              {
+                "name": "d3.geom.hull"
+              },
+              {
+                "name": "hull"
+              },
+              {
+                "name": "hull.x"
+              },
+              {
+                "name": "hull.y"
+              }
+            ]
+          },
+          {
+            "name": "Polygon",
+            "children": [
+              {
+                "name": "d3.geom.polygon"
+              },
+              {
+                "name": "polygon.area"
+              },
+              {
+                "name": "polygon.centroid"
+              },
+              {
+                "name": "polygon.clip"
+              }
+            ]
+          },
+          {
+            "name": "Quadtree",
+            "children": [
+              {
+                "name": "d3.geom.quadtree"
+              },
+              {
+                "name": "quadtree.add"
+              },
+              {
+                "name": "quadtree.visit"
+              },
+              {
+                "name": "quadtree.find"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "d3",
+        "children": [
+          {
+            "name": "Internals",
+            "children": [
+              {
+                "name": "d3.functor"
+              },
+              {
+                "name": "d3.rebind"
+              },
+              {
+                "name": "d3.dispatch"
+              },
+              {
+                "name": "dispatch.on"
+              },
+              {
+                "name": "dispatch.type"
+              }
+            ]
+          },
+          {
+            "name": "Selections",
+            "children": [
+              {
+                "name": "d3.select"
+              },
+              {
+                "name": "d3.selectAll"
+              },
+              {
+                "name": "selection.attr"
+              },
+              {
+                "name": "selection.classed"
+              },
+              {
+                "name": "selection.style"
+              },
+              {
+                "name": "selection.property"
+              },
+              {
+                "name": "selection.text"
+              },
+              {
+                "name": "selection.html"
+              },
+              {
+                "name": "selection.append"
+              },
+              {
+                "name": "selection.insert"
+              },
+              {
+                "name": "selection.remove"
+              },
+              {
+                "name": "selection.data"
+              },
+              {
+                "name": "selection.enter"
+              },
+              {
+                "name": "selection.exit"
+              },
+              {
+                "name": "selection.datum"
+              },
+              {
+                "name": "selection.filter"
+              },
+              {
+                "name": "selection.sort"
+              },
+              {
+                "name": "selection.order"
+              },
+              {
+                "name": "selection.on"
+              },
+              {
+                "name": "selection.transition"
+              },
+              {
+                "name": "selection.interrupt"
+              },
+              {
+                "name": "selection.each"
+              },
+              {
+                "name": "selection.call"
+              },
+              {
+                "name": "selection.empty"
+              },
+              {
+                "name": "selection.node"
+              },
+              {
+                "name": "selection.size"
+              },
+              {
+                "name": "selection.select"
+              },
+              {
+                "name": "selection.selectAll"
+              },
+              {
+                "name": "d3.selection"
+              },
+              {
+                "name": "d3.event"
+              },
+              {
+                "name": "d3.mouse"
+              },
+              {
+                "name": "d3.touch"
+              },
+              {
+                "name": "d3.touches"
+              }
+            ]
+          },
+          {
+            "name": "Localization",
+            "children": [
+              {
+                "name": "d3.locale"
+              },
+              {
+                "name": "locale.numberFormat"
+              },
+              {
+                "name": "locale.timeFormat"
+              }
+            ]
+          },
+          {
+            "name": "CSV Formatting",
+            "children": [
+              {
+                "name": "d3.csv file"
+              },
+              {
+                "name": "d3.csv.parse"
+              },
+              {
+                "name": "d3.csv.parseRows"
+              },
+              {
+                "name": "d3.csv.format"
+              },
+              {
+                "name": "d3.csv.formatRows"
+              },
+              {
+                "name": "d3.tsv file"
+              },
+              {
+                "name": "d3.tsv.parse"
+              },
+              {
+                "name": "d3.tsv.parseRows"
+              },
+              {
+                "name": "d3.tsv.format"
+              },
+              {
+                "name": "d3.tsv.formatRows"
+              },
+              {
+                "name": "d3.dsv"
+              }
+            ]
+          },
+          {
+            "name": "Loading External Resources",
+            "children": [
+              {
+                "name": "d3.xhr"
+              },
+              {
+                "name": "xhr.header"
+              },
+              {
+                "name": "xhr.mimeType"
+              },
+              {
+                "name": "xhr.response"
+              },
+              {
+                "name": "xhr.get"
+              },
+              {
+                "name": "xhr.post"
+              },
+              {
+                "name": "xhr.send"
+              },
+              {
+                "name": "xhr.abort"
+              },
+              {
+                "name": "xhr.on"
+              },
+              {
+                "name": "d3.text"
+              },
+              {
+                "name": "d3.json"
+              },
+              {
+                "name": "d3.html"
+              },
+              {
+                "name": "d3.xml"
+              },
+              {
+                "name": "d3.csv file"
+              },
+              {
+                "name": "d3.tsv file"
+              }
+            ]
+          },
+          {
+            "name": "Colors",
+            "children": [
+              {
+                "name": "d3.rgb"
+              },
+              {
+                "name": "rgb.brighter"
+              },
+              {
+                "name": "rgb.darker"
+              },
+              {
+                "name": "rgb.hsl"
+              },
+              {
+                "name": "rgb.toString"
+              },
+              {
+                "name": "d3.hsl"
+              },
+              {
+                "name": "hsl.brighter"
+              },
+              {
+                "name": "hsl.darker"
+              },
+              {
+                "name": "hsl.rgb"
+              },
+              {
+                "name": "hsl.toString"
+              },
+              {
+                "name": "d3.lab"
+              },
+              {
+                "name": "lab.brighter"
+              },
+              {
+                "name": "lab.darker"
+              },
+              {
+                "name": "lab.rgb"
+              },
+              {
+                "name": "lab.toString"
+              },
+              {
+                "name": "d3.hcl"
+              },
+              {
+                "name": "hcl.brighter"
+              },
+              {
+                "name": "hcl.darker"
+              },
+              {
+                "name": "hcl.rgb"
+              },
+              {
+                "name": "hcl.toString"
+              }
+            ]
+          },
+          {
+            "name": "Working with Arrays",
+            "children": [
+              {
+                "name": "d3.ascending"
+              },
+              {
+                "name": "d3.descending"
+              },
+              {
+                "name": "d3.min"
+              },
+              {
+                "name": "d3.max"
+              },
+              {
+                "name": "d3.extent"
+              },
+              {
+                "name": "d3.sum"
+              },
+              {
+                "name": "d3.mean"
+              },
+              {
+                "name": "d3.median"
+              },
+              {
+                "name": "d3.quantile"
+              },
+              {
+                "name": "d3.variance"
+              },
+              {
+                "name": "d3.deviation"
+              },
+              {
+                "name": "d3.bisect"
+              },
+              {
+                "name": "d3.bisectRight"
+              },
+              {
+                "name": "d3.bisectLeft"
+              },
+              {
+                "name": "d3.bisector"
+              },
+              {
+                "name": "d3.shuffle"
+              },
+              {
+                "name": "d3.permute"
+              },
+              {
+                "name": "d3.zip"
+              },
+              {
+                "name": "d3.transpose"
+              },
+              {
+                "name": "d3.pairs"
+              },
+              {
+                "name": "d3.keys"
+              },
+              {
+                "name": "d3.values"
+              },
+              {
+                "name": "d3.entries"
+              },
+              {
+                "name": "d3.merge"
+              },
+              {
+                "name": "d3.range"
+              },
+              {
+                "name": "d3.nest"
+              },
+              {
+                "name": "nest.key"
+              },
+              {
+                "name": "nest.sortKeys"
+              },
+              {
+                "name": "nest.sortValues"
+              },
+              {
+                "name": "nest.rollup"
+              },
+              {
+                "name": "nest.map"
+              },
+              {
+                "name": "nest.entries"
+              },
+              {
+                "name": "d3.map"
+              },
+              {
+                "name": "map.has"
+              },
+              {
+                "name": "map.get"
+              },
+              {
+                "name": "map.set"
+              },
+              {
+                "name": "map.remove"
+              },
+              {
+                "name": "map.keys"
+              },
+              {
+                "name": "map.values"
+              },
+              {
+                "name": "map.entries"
+              },
+              {
+                "name": "map.forEach"
+              },
+              {
+                "name": "map.empty"
+              },
+              {
+                "name": "map.size"
+              },
+              {
+                "name": "d3.set"
+              },
+              {
+                "name": "set.has"
+              },
+              {
+                "name": "set.add"
+              },
+              {
+                "name": "set.remove"
+              },
+              {
+                "name": "set.values"
+              },
+              {
+                "name": "set.forEach"
+              },
+              {
+                "name": "set.empty"
+              },
+              {
+                "name": "set.size"
+              }
+            ]
+          },
+          {
+            "name": "Namespaces",
+            "children": [
+              {
+                "name": "d3.ns.prefix"
+              },
+              {
+                "name": "d3.ns.qualify"
+              }
+            ]
+          },
+          {
+            "name": "String Formatting",
+            "children": [
+              {
+                "name": "d3.format"
+              },
+              {
+                "name": "d3.formatPrefix for the specified value and precision"
+              },
+              {
+                "name": "d3.requote"
+              },
+              {
+                "name": "d3.round"
+              }
+            ]
+          },
+          {
+            "name": "Transitions",
+            "children": [
+              {
+                "name": "d3.transition"
+              },
+              {
+                "name": "transition.delay"
+              },
+              {
+                "name": "transition.duration"
+              },
+              {
+                "name": "transition.ease"
+              },
+              {
+                "name": "transition.attr"
+              },
+              {
+                "name": "transition.attrTween"
+              },
+              {
+                "name": "transition.style"
+              },
+              {
+                "name": "transition.styleTween"
+              },
+              {
+                "name": "transition.text"
+              },
+              {
+                "name": "transition.tween"
+              },
+              {
+                "name": "transition.select"
+              },
+              {
+                "name": "transition.selectAll"
+              },
+              {
+                "name": "transition.filter"
+              },
+              {
+                "name": "transition.transition"
+              },
+              {
+                "name": "transition.remove"
+              },
+              {
+                "name": "transition.empty"
+              },
+              {
+                "name": "transition.node"
+              },
+              {
+                "name": "transition.size"
+              },
+              {
+                "name": "transition.each"
+              },
+              {
+                "name": "transition.call"
+              },
+              {
+                "name": "d3.ease"
+              },
+              {
+                "name": "ease"
+              },
+              {
+                "name": "d3.timer"
+              },
+              {
+                "name": "d3.timer.flush"
+              },
+              {
+                "name": "d3.interpolate"
+              },
+              {
+                "name": "interpolate"
+              },
+              {
+                "name": "d3.interpolateNumber"
+              },
+              {
+                "name": "d3.interpolateRound"
+              },
+              {
+                "name": "d3.interpolateString"
+              },
+              {
+                "name": "d3.interpolateRgb"
+              },
+              {
+                "name": "d3.interpolateHsl"
+              },
+              {
+                "name": "d3.interpolateLab"
+              },
+              {
+                "name": "d3.interpolateHcl"
+              },
+              {
+                "name": "d3.interpolateArray"
+              },
+              {
+                "name": "d3.interpolateObject"
+              },
+              {
+                "name": "d3.interpolateTransform"
+              },
+              {
+                "name": "d3.interpolateZoom"
+              },
+              {
+                "name": "d3.interpolators"
+              }
+            ]
+          },
+          {
+            "name": "Math",
+            "children": [
+              {
+                "name": "d3.random.normal"
+              },
+              {
+                "name": "d3.random.logNormal"
+              },
+              {
+                "name": "d3.random.bates"
+              },
+              {
+                "name": "d3.random.irwinHall"
+              },
+              {
+                "name": "d3.transform"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
