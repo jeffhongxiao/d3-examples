@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function shouldShow(d) {
   if (!d) {
@@ -50,10 +50,12 @@ d3.json("./tree.json", function(error, json) {
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  //var root = treeData[0];
-  // FIXME change this to focus on a different topic
-  //var root = $(treeData[0]).attr('children')[0];
-  var root = treeData[0].children[0];
+  // TODO change this to focus on a different topic
+  var root = treeData[0];
+  //var root = treeData[0].children[0].children[0];
+  //var root = $(treeData[0]).attr('children');
+  //var root = $($(treeData[0]).attr('children')).attr('children');
+
   root.x0 = height / 2;
   root.y0 = 0;
 
