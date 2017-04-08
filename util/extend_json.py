@@ -23,9 +23,7 @@ def flatten_list(mylist):
 def smart_flatten(myobj):
     if isinstance(myobj, list):
         result_list = flatten_list(myobj);
-        result = {}
-        result["children"] = result_list;
-        return result;
+        return result_list;
 
     if isinstance(myobj, dict):
         result_list = []
