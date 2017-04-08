@@ -18,6 +18,47 @@ function shouldShow(d) {
 
 };
 
+function findRoot(data, rootName, level) {
+  if (level >= 3 || level < 0) {
+    console.warn('level needs to be 0, 1, 2 in findRoot()');
+    return data;
+  }
+
+  if (level === 0) {
+    return data;
+  }
+
+  if (level === 1) {
+    var index = 0;
+    data.children.forEach(function(item, i) {
+      if (item.name === rootName) {
+        index = i;
+        //break;
+      }
+    });
+
+    return data.children[index];
+  }
+
+  if (level === 2) {
+    var indexI = 0;
+    var indexJ = 0;
+    data.children.forEach(function(item, i) {
+      item.children.forEach(function(item, j) {
+        if (item.name === rootName) {
+          indexI = i;
+          indexJ = j;
+          //break;
+        }
+      })
+    });
+
+    return data.children[indexI].children[indexJ];
+  }
+
+  return undefined;
+}
+
 d3.json("./tree.json", function(error, json) {
   if (error) return console.warn(error);
   var treeData = json;
@@ -50,11 +91,10 @@ d3.json("./tree.json", function(error, json) {
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  // TODO change this to focus on a different topic
-  var root = treeData[0];
-  //var root = treeData[0].children[0].children[0];
-  //var root = $(treeData[0]).attr('children');
-  //var root = $($(treeData[0]).attr('children')).attr('children');
+  // TODO change this to focus on a different root
+  var root = findRoot(treeData[0], 'd3', 1);
+  //var root = findRoot(treeData[0], 'Selections', 2);
+
 
   root.x0 = height / 2;
   root.y0 = 0;
