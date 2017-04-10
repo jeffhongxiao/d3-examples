@@ -59,6 +59,12 @@ function findRoot(data, rootName, level) {
   return undefined;
 }
 
+var thelink = $('<a>', {
+  text: 'API',
+  title: 'link to d3.js (v3) API',
+  href: 'https://github.com/d3/d3-3.x-api-reference/blob/master/API-Reference.md'
+}).appendTo('body');
+
 d3.json("./tree.json", function(error, json) {
   if (error) return console.warn(error);
   var treeData = json;
@@ -92,7 +98,8 @@ d3.json("./tree.json", function(error, json) {
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   // TODO change this to focus on a different root
-  var root = findRoot(treeData[0], 'd3', 1);
+  var root = treeData[0];
+  //var root = findRoot(treeData[0], 'd3.layout', 1);
   //var root = findRoot(treeData[0], 'Selections', 2);
 
 
