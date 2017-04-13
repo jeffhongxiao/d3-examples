@@ -78,7 +78,7 @@ d3.json("./tree.json", function(error, json) {
       left: 120
     },
     width = 1600 - margin.right - margin.left,
-    height = 900 - margin.top - margin.bottom;
+    height = 9000 - margin.top - margin.bottom;
 
   var i = 0,
     duration = 750;
